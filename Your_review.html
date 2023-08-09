@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Review</title>
+</head>
+<style>
+    *{ 
+        box-sizing: border-box;
+    }
+    body {
+        background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./images/banner6.jpg);
+        background-position: center;
+        background-size: contain;
+        color: #ffff;
+    }
+    input text {
+  padding: 10px;
+  width: 75%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+  box-shadow:0 0 1px 1px #4c4e4d;
+    }
+    legend {
+        font-size: 20px;
+        color: #ffffff;
+    }
+    fieldset {
+        width: 50%;
+        background-color:#000000;
+        border-radius: 10px;
+    }  
+  #fscontainer3 {
+    width: 65%;
+    margin-right:  67%;;
+    margin-left: 33%;
+    padding: 30 px;
+  }
+  .btn-box3 {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+ }
+ form button {
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+ }
+  button:hover {border-style:double;   
+ }
+ .step-row {
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #ffffff;
+    position: relative;
+ }
+  
+  .step-col {
+    width: 120px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+  }
+    #progress1 {
+    position: relative;
+    height: 100%;
+    width: 120px;
+    background:linear-gradient(to right, #ff105f, #ff9f10) ;
+  }
+  #progress2 {
+    position:relative;
+    height: 100%;
+    width: 120px;
+    background:linear-gradient(to right, #ff9f10, #ffad06) ;
+    text-align: center;
+  }
+ #progress3 {
+    position:relative;
+    height: 100%;
+    width: 120px;
+    background:linear-gradient(to right, #ffad06, #f2b63e) ;
+    text-align: center; 
+  }
+    </style>
+<body>
+    <br>
+    <form action="./images/Submit.jpg">
+        <div class="step-row">
+            <div ></div>
+            <div class="step-col" id="progress1" >Step 1:</div>
+            <div class="step-col" id="progress2">Step 2:</div>
+            <div class="step-col" id="progress3">Step 3:</div>
+        </div>
+    <div id="fscontainer3" >
+    <fieldset>
+        <legend>
+       <b> Your Review:</b>
+        </legend><br>
+        How did you hear about us? &ensp;<select name="" id="" >Select your option
+            <option value="1">Select your option</option>
+        </select>
+        <br>
+        <br>
+        Would you vist again?<br>
+         <input type="radio" value="Yes" checked="Yes">Yes 
+         <input type="radio" value="No">No 
+         <input type="radio" value="Maybe">Maybe
+         <br>
+         <br>
+         <label for="comments">Comments:</label><br>
+         <textarea name="comments" id="comments" cols="30" rows="4" placeholder="Enter your comments here..."></textarea>
+         <br>
+         <br>
+         <label for="documents">Documents:</label><br>
+         &ensp;<input type="file" id="documents">
+         <br>
+         <br>
+         <input type="checkbox" style="width:35px;">Sign me up for email updates.
+         <br>
+         <br>
+         <div style="text-align: right;" class="btn-box3">
+            <a href="./Personal_deteils.html" onclick="nextPrev(-1)"> <button type="button" id="backb">◄Back</button></a>
+            <a href="./Your_review.html"><button type="submit" id="submitbtn" value="">SUBMIT►</button></a>
+
+        </div>
+    </fieldset>
+ </form>
+</body>
+</html>

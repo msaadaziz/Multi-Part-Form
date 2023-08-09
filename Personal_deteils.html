@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persnal Deteils:</title>
+</head>
+<style>
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block ruby-base-container;
+    opacity: 0.5;
+  }
+  body {
+        background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./images/banner6.jpg);
+        background-position: center;
+        background-size: contain;
+        color: #ffff;
+    }
+  #fscontainer2 {
+    width: 60%;
+    margin-right:  67%;;
+    margin-left: 33%;
+    padding: 20 px;
+  }
+  legend {
+        font-size: 20px;
+        color: #ffffff;
+    }
+    fieldset {
+        width: 50%;
+        background-color:#000000;
+        border-radius: 10px;
+
+    }
+  .cnicbox {
+    display: flex;
+        }
+   .cnicbox input {
+           width:15px ;
+           font-size:17px;
+           padding: 4px;
+           text-align: center;
+           border-radius: 8px;
+           margin: 1px;
+           border: 2px solid lightslategrey;
+
+   }    
+   .cnicbox input:focus{
+    border: 2px solid gray;
+    box-shadow: 0 0 2px 2px gray;
+
+   }
+   .space {
+    margin-right: 0.8rem  !important;
+   } 
+   input {
+  padding: 8px;
+  width: 65%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+  box-shadow:0 0 1px 1px #4c4e4d;
+   }
+  .btn-box2 {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+ }
+ form button {
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+
+ }
+  button:hover {border-style:double;
+ }
+ .step-row {
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #ffffff;
+    position: relative;
+ }
+  
+  .step-col {
+    width: 120px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+  }
+  #progress1 {
+    position: relative;
+    height: 100%;
+    width: 120px;
+    background:linear-gradient(to right, #ff105f, #ff9f10) ;
+    text-align: center;
+  }
+  #progress2 {
+    position:relative;
+    height: 100%;
+    width: 120px;
+    background:linear-gradient(to right, #ff9f10, #ffad06) ;
+    text-align: center;
+  }
+   ::after {
+    position: absolute;
+  }
+  
+ 
+  </style >
+<body>
+    <br>
+    <form id="personaldeteils" action="">
+        <div class="step-row">
+            <div ></div>
+            <div class="step-col" id="progress1" >Step 1:</div>
+            <div class="step-col" id="progress2">Step 2:</div>
+            <div class="step-col" id="progress3">Step 3:</div>
+        </div>
+          <div id="fscontainer2">
+<fieldset>
+<legend><b>Personal Deteils:</b></legend>
+<label for="fname">First Name:</label><br>
+<input type="text" name="fname" id=fname placeholder="Enter first name..."><br><br>
+<label for="lname">Last Name:</label><br>
+<input type="text" name="lname" id="lname" placeholder="Enter last name..."><br><br>
+<label for="text">CNIC:</label><br> 
+<div class="cnicbox">
+<input type="text" maxlength="1" >
+<input type="text" maxlength="1" >
+<input type="text" maxlength="1" >
+<input type="text" maxlength="1" >
+<input type="text" maxlength="1" class="space" >
+<input type="text" maxlength="1" >
+<input type="text" maxlength="1" >
+<input type="text" maxlength="1" >
+<input type="text" maxlength="1" >
+<input type="text" maxlength="1" >
+<input type="text" maxlength="1"  class="space">
+<input type="text" maxlength="1" >
+</div> <br>
+<label for="social_link">Social Link:</label><br>
+<input type="url" name="social_link" id="social_link" placeholder="Enter facebook/lindin link..."> <br><br>
+<div style="text-align: right;" class="btn-box2">
+    <a href="./Account_deteils.html" onclick="nextPrev(-1)"> <button type="button" id="backb">◄Back</button></a>
+    <a href="./Your_review.html" onclick="nextPrev(1)"><button type="button" id="nextb">Next►</button></a>
+    </div>
+   </fieldset>
+  </div>
+ </form>
+</body>
+</html>
